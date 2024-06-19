@@ -92,31 +92,32 @@ section {
 .project {
     flex: 1 1 30%;
     margin: 1rem 0;
-    background: #fafafa;
-    border: 1px solid #dddddd;
-    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project a {
+    display: block;
+    width: 120px; /* Width of the iOS icon */
+    height: 120px; /* Height of the iOS icon */
+    border-radius: 22.5px; /* Border radius for iOS icon shape */
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-}
-
-.project:hover {
-    transform: scale(1.05);
+    background: #fafafa;
+    border: 1px solid #dddddd;
 }
 
 .project a img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     transition: transform 0.3s ease-in-out;
 }
 
-.project a:hover img {
-    transform: scale(1.03);
-}
-
-.project p {
-    padding: 1rem;
-    text-align: center;
+.project:hover a {
+    transform: scale(1.05);
 }
 
 .about-section {

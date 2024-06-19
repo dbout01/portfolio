@@ -1,9 +1,11 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Base Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -17,8 +19,9 @@ body {
     margin: auto;
 }
 
+/* Header */
 header {
-    background: white; /* Dark gray background for header */
+    background: white;
     color: black;
     padding: 1rem 0;
 }
@@ -54,6 +57,7 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+/* Sections */
 section {
     padding: 2rem 0;
 }
@@ -86,7 +90,7 @@ section {
 }
 
 .project {
-    flex: 1 1 30%; /* Adjusting to show more projects in one row */
+    flex: 1 1 30%;
     margin: 1rem 0;
     background: #fafafa;
     border: 1px solid #dddddd;
@@ -100,9 +104,14 @@ section {
     transform: scale(1.05);
 }
 
-.project img {
+.project a img {
     width: 100%;
     height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project a:hover img {
+    transform: scale(1.03);
 }
 
 .project p {
@@ -132,6 +141,7 @@ section {
     margin: 0 auto;
 }
 
+/* Contact Section */
 .contact-section {
     background-color: #ffffff;
     padding: 4rem 0;
@@ -142,6 +152,31 @@ section {
     margin-bottom: 1rem;
 }
 
+.contact-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-section li {
+    margin-bottom: 0.5rem;
+}
+
+.contact-section a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.contact-section i {
+    margin-right: 10px;
+    color: #0077b5;
+}
+
+.fas, .fab {
+    font-size: 1.5rem;
+}
+
+/* Form Styles */
 form {
     max-width: 600px;
     margin: 0 auto;
@@ -152,7 +187,7 @@ form {
 }
 
 form label {
-    display: block;
+    display:block;
     margin: 0.5rem 0;
     font-weight: bold;
 }
@@ -169,7 +204,7 @@ form button {
     display: block;
     width: 100%;
     padding: 0.75rem;
-    background: #333333; /* Dark gray background for buttons */
+    background: #333333;
     color: #ffffff;
     border: none;
     border-radius: 5px;

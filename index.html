@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
@@ -35,34 +36,47 @@
             <div class="portfolio-gallery">
                 <!-- Add your project images and descriptions here -->
                 <div class="project">
-                    <img src="project1.jpg" alt="Project 1">
+                    <a href="https://example.com/project1">
+                        <img src="project1.jpg" alt="Project 1">
+                    </a>
                     <p>Project 1 Description</p>
                 </div>
                 <div class="project">
-                    <img src="project2.jpg" alt="Project 2">
+                    <a href="https://example.com/project2">
+                        <img src="project2.jpg" alt="Project 2">
+                    </a>
                     <p>Project 2 Description</p>
                 </div>
                 <div class="project">
-                    <img src="project3.jpg" alt="Project 3">
+                    <a href="https://example.com/project3">
+                        <img src="project3.jpg" alt="Project 3">
+                    </a>
                     <p>Project 3 Description</p>
                 </div>
                 <div class="project">
-                    <img src="project4.jpg" alt="Project 4">
+                    <a href="https://example.com/project4">
+                        <img src="project4.jpg" alt="Project 4">
+                    </a>
                     <p>Project 4 Description</p>
                 </div>
                 <div class="project">
-                    <img src="project5.jpg" alt="Project 5">
+                    <a href="https://example.com/project5">
+                        <img src="project5.jpg" alt="Project 5">
+                    </a>
                     <p>Project 5 Description</p>
                 </div>
                 <div class="project">
-                    <img src="project6.jpg" alt="Project 6">
+                    <a href="https://example.com/project6">
+                        <img src="project6.jpg" alt="Project 6">
+                    </a>
                     <p>Project 6 Description</p>
                 </div>
                 <div class="project">
-                    <img src="project7.jpg" alt="Project 7">
+                    <a href="https://example.com/project7">
+                        <img src="project7.jpg" alt="Project 7">
+                    </a>
                     <p>Project 7 Description</p>
                 </div>
-                <!-- More projects if needed -->
             </div>
         </div>
     </section>
@@ -80,11 +94,12 @@
             <h2>Contact Me</h2>
             <p>You can reach out to me via:</p>
             <ul>
-                <li><a href="mailto:your-email@example.com">Email</a></li>
-                <li><a href="https://www.linkedin.com/in/your-linkedin-profile">LinkedIn</a></li>
+                <li><a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i> Email</a></li>
+                <li><a href="https://www.linkedin.com/in/your-linkedin-profile"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
             </ul>
         </div>
     </section>
+    
     <script>
         const ctx = document.getElementById('skillsChart').getContext('2d');
         const skillsChart = new Chart(ctx, {

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Dylan Butterfield</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="home" class="home-section">
+        <div class="container">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Software Engineer | Project Manager | Tech Enthusiast</p>
+        </div>
+    </section>
+    
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2>My Work</h2>
+            <div class="portfolio-gallery">
+                <!-- Add your project images and descriptions here -->
+                <div class="project">
+                    <img src="project1.jpg" alt="Project 1">
+                    <p>Project 1 Description</p>
+                </div>
+                <div class="project">
+                    <img src="project2.jpg" alt="Project 2">
+                    <p>Project 2 Description</p>
+                </div>
+                <div class="project">
+                    <img src="project3.jpg" alt="Project 3">
+                    <p>Project 3 Description</p>
+                </div>
+                <div class="project">
+                    <img src="project4.jpg" alt="Project 4">
+                    <p>Project 4 Description</p>
+                </div>
+                <div class="project">
+                    <img src="project5.jpg" alt="Project 5">
+                    <p>Project 5 Description</p>
+                </div>
+                <div class="project">
+                    <img src="project6.jpg" alt="Project 6">
+                    <p>Project 6 Description</p>
+                </div>
+                <div class="project">
+                    <img src="project7.jpg" alt="Project 7">
+                    <p>Project 7 Description</p>
+                </div>
+                <!-- More projects if needed -->
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Detailed bio and skills.</p>
+            <canvas id="skillsChart" width="400" height="400"></canvas>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>You can reach out to me via:</p>
+            <ul>
+                <li><a href="mailto:your-email@example.com">Email</a></li>
+                <li><a href="https://www.linkedin.com/in/your-linkedin-profile">LinkedIn</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Dylan's Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const ctx = document.getElementById('skillsChart').getContext('2d');
+        const skillsChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['JavaScript', 'HTML', 'CSS', 'Python', 'Project Management'],
+                datasets: [{
+                    label: 'Skills',
+                    data: [20, 20, 20, 20, 20],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true
+            }
+        });
+    </script>
+</body>
+</html>

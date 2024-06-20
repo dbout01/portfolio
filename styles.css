@@ -222,3 +222,53 @@ form button:hover {
     background: #555555;
 }
 
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+
+    header {
+        background: #1f1f1f;
+        color: #e0e0e0;
+    }
+
+    nav ul li a {
+        color: #e0e0e0;
+    }
+
+    nav ul li a:hover {
+        background: #333333;
+    }
+
+    .home-section, 
+    .portfolio-section, 
+    .about-section, 
+    .contact-section {
+        background-color: #1f1f1f;
+        color: #e0e0e0;
+    }
+
+    form {
+        background: #1f1f1f;
+        border: 1px solid #333333;
+    }
+
+    form label {
+        color: #e0e0e0;
+    }
+
+    form input, 
+    form textarea {
+        background: #333333;
+        color: #e0e0e0;
+        border: 1px solid #555555;
+    }
+
+    form button {
+        background: #555555;
+        color: #e0e0e0;
+    }
+}
+

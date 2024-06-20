@@ -229,12 +229,12 @@ form button:hover {
 /* Dark Mode Styles */
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: black;
+        background-color: #0C0D0D;
         color: #e0e0e0;
     }
 
     header {
-        background: black;
+        background: #0C0D0D;
         color: #e0e0e0;
     }
 
@@ -243,20 +243,20 @@ form button:hover {
     }
 
     nav ul li a:hover {
-        background: black;
+        background: #0C0D0D;
     }
 
     .home-section, 
     .portfolio-section, 
     .about-section, 
     .contact-section {
-        background-color: black;
+        background-color: #0C0D0D;
         color: #e0e0e0;
     }
 
     form {
-        background: blackf;
-        border: 1px solid black;
+        background: #0C0D0D;
+        border: 1px solid #0C0D0D;
     }
 
     form label {
@@ -265,13 +265,13 @@ form button:hover {
 
     form input, 
     form textarea {
-        background: black;
+        background: #0C0D0D;
         color: #e0e0e0;
-        border: 1px solid black;
+        border: 1px solid #0C0D0D;
     }
 
     form button {
-        background: black;
+        background: #0C0D0D;
         color: #e0e0e0;
     }
 }

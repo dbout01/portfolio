@@ -11,7 +11,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #ffffff;
+    background-color: white;
     color: #333;
 }
 
@@ -58,7 +58,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #555555;
+    background: white;
     border-radius: 5px;
 }
 
@@ -70,7 +70,7 @@ section {
 
 .home-section {
     padding: 4rem 0;
-    background-color: #f8f8f8;
+    background-color: white;
 }
 
 .home-section h2 {
@@ -84,7 +84,7 @@ section {
 }
 
 .portfolio-section {
-    background-color: #ffffff;
+    background-color: white;
 }
 
 .portfolio-gallery {
@@ -110,7 +110,7 @@ section {
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-    background: #fafafa;
+    background: white;
     border: 1px solid #dddddd;
 }
 
@@ -126,7 +126,7 @@ section {
 }
 
 .about-section {
-    background-color: #f8f8f8;
+    background-color: white;
 }
 
 .about-section h2 {
@@ -229,12 +229,12 @@ form button:hover {
 /* Dark Mode Styles */
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #121212;
+        background-color: black;
         color: #e0e0e0;
     }
 
     header {
-        background: #1f1f1f;
+        background: black;
         color: #e0e0e0;
     }
 
@@ -243,20 +243,20 @@ form button:hover {
     }
 
     nav ul li a:hover {
-        background: #333333;
+        background: black;
     }
 
     .home-section, 
     .portfolio-section, 
     .about-section, 
     .contact-section {
-        background-color: #1f1f1f;
+        background-color: black;
         color: #e0e0e0;
     }
 
     form {
-        background: #1f1f1f;
-        border: 1px solid #333333;
+        background: blackf;
+        border: 1px solid black;
     }
 
     form label {
@@ -265,13 +265,13 @@ form button:hover {
 
     form input, 
     form textarea {
-        background: #333333;
+        background: black;
         color: #e0e0e0;
-        border: 1px solid #555555;
+        border: 1px solid black;
     }
 
     form button {
-        background: #555555;
+        background: black;
         color: #e0e0e0;
     }
 }

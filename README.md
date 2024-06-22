@@ -39,6 +39,7 @@ I found these websites useful in developing this software:
 ## Future Work
 
 The following items I plan to fix, improve, and/or add to this project in the future:
+* [ ] Update doughnut chart colors for dark mode
 * [ ] Add a fun video feature to visually represent my projects.
 * [ ] Enhance the skills chart with interactive elements that provide more detailed information on hover.
 * [ ] Implement a blog section to share insights and updates on my ongoing projects and learning.

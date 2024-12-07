@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Dylan Butterfield</h1>
+            <h1 class="main-title">Dylan Butterfield</h1>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -25,126 +25,106 @@
             </nav>
         </div>
     </header>
-    
+
     <section id="home" class="home-section">
         <div class="container">
             <h2>Welcome to My Portfolio</h2>
-            <p>Software Engineer | Project Management | Tech Enthusiast</p>
+            <p class="tagline">Software Engineer | Project Management | Tech Enthusiast</p>
         </div>
     </section>
-    
+
     <section id="portfolio" class="portfolio-section">
         <div class="container">
             <h2>My Work</h2>
             <div class="portfolio-gallery">
-                <!-- Add your app icons here -->
                 <div class="project">
                     <a href="https://github.com/dbout01/myweather">
-                        <img src="images/myweather.webp" alt="App 1">
+                        <img src="images/myweather.webp" alt="My Weather App">
                     </a>
                 </div>
                 <div class="project">
                     <a href="https://github.com/dbout01/Country-Database">
-                        <img src="images/countrydatabase.webp" alt="App 2">
+                        <img src="images/countrydatabase.webp" alt="Country Database">
                     </a>
                 </div>
                 <div class="project">
                     <a href="https://www.linkedin.com/in/dylan-butterfield/details/projects/1716414336652/single-media-viewer/?type=DOCUMENT&profileId=ACoAAD1HM1oBQJMjZ7dcJfox0aV9OoYLBZEPYec">
-                        <img src="images/srsdocument.webp" alt="App 3">
+                        <img src="images/srsdocument.webp" alt="SRS Document">
                     </a>
                 </div>
                 <div class="project">
                     <a href="https://github.com/dbout01/HelloWorld">
-                        <img src="images/helloworld.webp" alt="App 4">
+                        <img src="images/helloworld.webp" alt="Hello World">
                     </a>
                 </div>
                 <div class="project">
                     <a href="https://github.com/dbout01/cse210">
-                        <img src="images/csharp.webp" alt="App 5">
+                        <img src="images/csharp.webp" alt="C# Projects">
                     </a>
                 </div>
                 <div class="project">
                     <a href="https://github.com/dbout01/cse121">
-                        <img src="images/javascript.webp" alt="App 6">
+                        <img src="images/javascript.webp" alt="JavaScript Projects">
                     </a>
                 </div>
                 <div class="project">
                     <a href="https://github.com/dbout01/cit111">
-                        <img src="images/mysql.webp" alt="App 7">
+                        <img src="images/mysql.webp" alt="MySQL Projects">
                     </a>
                 </div>
                 <div class="project">
                     <a href="https://github.com/dbout01/cse111">
-                        <img src="images/python.webp" alt="App 8">
+                        <img src="images/python.webp" alt="Python Projects">
                     </a>
                 </div>
                 <div class="project">
                     <a href="https://github.com/dbout01/wdd130">
-                        <img src="images/webdev.webp" alt="App 9">
+                        <img src="images/webdev.webp" alt="Web Development Projects">
                     </a>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <section id="about" class="about-section">
         <div class="container">
             <h2>About Me</h2>
-            <p>Detailed bio and skills.</p>
-            <p>I'm a driven software engineering student with a passion for solving unique challenges in the world of programming.
-                My goal is to cultivate a skill set to excel in dynamic, high-paced settings.
-                Beyond my academic pursuits, I'm an avid explorer of the outdoors,
-                an enthusiastic traveler, and a cultural enthusiast. These experiences infuse different viewpoints into my studies.
-                When I began my programming journey, it was pretty difficult. Initially, learning python was hard for me.
-                After staying on top of my coursework and participating in my classes, I saw myself grow as a programmer
-                in Python. I embrace opportunities for growth and thrive on collaboration with fellow programmers and
-                innovators, as well as enthusiastic about forging connections with like-minded individuals.</p>
+            <p class="about-text">I'm a driven software engineering student with a passion for solving unique challenges in the world of programming. Beyond my academic pursuits, I thrive on outdoor adventures and cultural exploration.</p>
             <canvas id="skillsChart" width="400" height="400"></canvas>
         </div>
     </section>
-    
+
     <section id="contact" class="contact-section">
         <div class="container">
             <h2>Contact Me</h2>
-            <p>You can reach out to me via:</p>
+            <p>Feel free to reach out via:</p>
             <ul>
                 <li><a href="mailto:dbutterfield208319@gmail.com"><i class="fas fa-envelope"></i>Email</a></li>
                 <li><a href="https://www.linkedin.com/in/dylan-butterfield/"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
             </ul>
         </div>
     </section>
-    
+
     <script>
         const ctx = document.getElementById('skillsChart').getContext('2d');
         const skillsChart = new Chart(ctx, {
             type: 'doughnut',
             data: {
-                labels: ['WebDev', 'Python', 'Agile', 'Devops', 'C#', 'Project Management'],
+                labels: ['WebDev', 'Python', 'Agile', 'DevOps', 'C#', 'Project Management'],
                 datasets: [{
-                    label: 'Skills',
                     data: [30, 60, 20, 35, 40, 60],
                     backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(255, 159, 64, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ],
-                    borderWidth: 1
+                        '#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF', '#FF9F40'
+                    ]
                 }]
             },
             options: {
-                responsive: true,
-                maintainAspectRatio: true
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'bottom'
+                    }
+                }
             }
         });
     </script>

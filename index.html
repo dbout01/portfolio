@@ -3,138 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Dylan's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 class="main-title">Dylan Butterfield</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div>
+            
+            <h1>Dylan Butterfield</h1>
+            <p class="subtitle">Aspiring Software Engineer | Innovator | Tech Enthusiast</p>
+            <a href="#portfolio" class="cta">Explore My Work</a>
         </div>
     </header>
 
-    <section id="home" class="home-section">
-        <div class="container">
-            <h2>Welcome to My Portfolio</h2>
-            <p class="tagline">Software Engineer | Project Management | Tech Enthusiast</p>
-        </div>
+    <!-- Sticky Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a dedicated software engineering student with a passion for solving real-world problems through innovative technology. With a strong foundation in programming and a love for continuous learning, I thrive in dynamic environments that encourage creativity and collaboration.</p>
     </section>
 
-    <section id="resume" class="resume-section">
-        <div class="container">
-            <h2>Resume</h2>
-            <p>Click the button below to download my resume:</p>
-            <a href="dylanbutterfield.pdf" class="btn-download" download>Download Resume</a>
-        </div>
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Click the button below to download my resume:</p>
+        <a href="resume.pdf" class="cta" download>
+            <i class="fas fa-download" style="font-size: 1rem; color: white; background: #333; padding: 0.5rem; border-radius: 50%;"></i>
+        </a>
     </section>
 
-    <section id="portfolio" class="portfolio-section">
-        <div class="container">
-            <h2>My Work</h2>
-            <div class="portfolio-gallery">
-                <div class="project">
-                    <a href="https://github.com/dbout01/myweather">
-                        <img src="images/myweather.webp" alt="My Weather App">
-                    </a>
-                </div>
-                <div class="project">
-                    <a href="https://github.com/dbout01/Country-Database">
-                        <img src="images/countrydatabase.webp" alt="Country Database">
-                    </a>
-                </div>
-                <div class="project">
-                    <a href="https://www.linkedin.com/in/dylan-butterfield/details/projects/1716414336652/single-media-viewer/?type=DOCUMENT&profileId=ACoAAD1HM1oBQJMjZ7dcJfox0aV9OoYLBZEPYec">
-                        <img src="images/srsdocument.webp" alt="SRS Document">
-                    </a>
-                </div>
-                <div class="project">
-                    <a href="https://github.com/dbout01/HelloWorld">
-                        <img src="images/helloworld.webp" alt="Hello World">
-                    </a>
-                </div>
-                <div class="project">
-                    <a href="https://github.com/dbout01/cse210">
-                        <img src="images/csharp.webp" alt="C# Projects">
-                    </a>
-                </div>
-                <div class="project">
-                    <a href="https://github.com/dbout01/cse121">
-                        <img src="images/javascript.webp" alt="JavaScript Projects">
-                    </a>
-                </div>
-                <div class="project">
-                    <a href="https://github.com/dbout01/cit111">
-                        <img src="images/mysql.webp" alt="MySQL Projects">
-                    </a>
-                </div>
-                <div class="project">
-                    <a href="https://github.com/dbout01/cse111">
-                        <img src="images/python.webp" alt="Python Projects">
-                    </a>
-                </div>
-                <div class="project">
-                    <a href="https://github.com/dbout01/wdd130">
-                        <img src="images/webdev.webp" alt="Web Development Projects">
-                    </a>
-                </div>
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-gallery">
+            <div class="portfolio-item">
+                <a href="https://github.com/dbout01/myweather">
+                    <img src="images/myweather.webp" alt="My Weather App" style="border-radius: 50%; width: 100px; height: 100px;">
+                    <div class="portfolio-overlay">
+                        <p>Weather App</p>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio-item">
+                <a href="https://github.com/dbout01/Country-Database">
+                    <img src="images/countrydatabase.webp" alt="Country Database" style="border-radius: 50%; width: 100px; height: 100px;">
+                    <div class="portfolio-overlay">
+                        <p>Country Database</p>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio-item">
+                <a href="https://github.com/dbout01/HelloWorld">
+                    <img src="images/helloworld.webp" alt="Hello World" style="border-radius: 50%; width: 100px; height: 100px;">
+                    <div class="portfolio-overlay">
+                        <p>Hello World Project</p>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio-item">
+                <a href="https://github.com/dbout01/cse210">
+                    <img src="images/csharp.webp" alt="C# Projects" style="border-radius: 50%; width: 100px; height: 100px;">
+                    <div class="portfolio-overlay">
+                        <p>C# Projects</p>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio-item">
+                <a href="https://github.com/dbout01/cse121">
+                    <img src="images/javascript.webp" alt="JavaScript Projects" style="border-radius: 50%; width: 100px; height: 100px;">
+                    <div class="portfolio-overlay">
+                        <p>JavaScript Projects</p>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio-item">
+                <a href="https://github.com/dbout01/cit111">
+                    <img src="images/mysql.webp" alt="MySQL Projects" style="border-radius: 50%; width: 100px; height: 100px;">
+                    <div class="portfolio-overlay">
+                        <p>MySQL Projects</p>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio-item">
+                <a href="https://github.com/dbout01/cse111">
+                    <img src="images/python.webp" alt="Python Projects" style="border-radius: 50%; width: 100px; height: 100px;">
+                    <div class="portfolio-overlay">
+                        <p>Python Projects</p>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio-item">
+                <a href="https://github.com/dbout01/wdd130">
+                    <img src="images/webdev.webp" alt="Web Development Projects" style="border-radius: 50%; width: 100px; height: 100px;">
+                    <div class="portfolio-overlay">
+                        <p>Web Development Projects</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+            <div class="portfolio-item">
+                <a href="https://github.com/dbout01/srs-document">
+                    <img src="images/srsdocument.webp" alt="SRS Document" style="border-radius: 50%; width: 100px; height: 100px;">
+                    <div class="portfolio-overlay">
+                        <p>SRS Document</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
-
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p class="about-text">I'm a driven software engineering student with a passion for solving unique challenges in the world of programming. Beyond my academic pursuits, I thrive on outdoor adventures and cultural exploration.</p>
-            <canvas id="skillsChart" width="400" height="400"></canvas>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to work together or just say hi, feel free to reach out!</p>
+        <div>
+            <a href="mailto:dbutterfield208319@gmail.com" style="font-size: 1.5rem; color: white; margin-right: 1rem;">
+    <i class="fas fa-envelope"></i>
+</a>
+            <a href="https://www.linkedin.com/in/dylan-butterfield/" style="font-size: 1.5rem; color: white;">
+    <i class="fab fa-linkedin"></i>
+</a>
         </div>
     </section>
 
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out via:</p>
-            <ul>
-                <li><a href="mailto:dbutterfield208319@gmail.com"><i class="fas fa-envelope"></i>Email</a></li>
-                <li><a href="https://www.linkedin.com/in/dylan-butterfield/"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
-            </ul>
-        </div>
-    </section>
-
-    <script>
-        const ctx = document.getElementById('skillsChart').getContext('2d');
-        const skillsChart = new Chart(ctx, {
-            type: 'doughnut',
-            data: {
-                labels: ['WebDev', 'Python', 'Agile', 'DevOps', 'C#', 'Project Management'],
-                datasets: [{
-                    data: [30, 60, 20, 35, 40, 60],
-                    backgroundColor: [
-                        '#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF', '#FF9F40'
-                    ]
-                }]
-            },
-            options: {
-                plugins: {
-                    legend: {
-                        display: true,
-                        position: 'bottom'
-                    }
-                }
-            }
-        });
-    </script>
+    <footer>
+        <p>&copy; 2024 Dylan Butterfield. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
